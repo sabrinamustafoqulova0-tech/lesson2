@@ -1,11 +1,33 @@
 import React from 'react'
+import Section1 from './component/section1.jsx';
+import Section2 from './component/section2.jsx';
+import Section3 from './component/section3.jsx';
+import Section4 from './component/section4.jsx';
+import Section5 from './component/section5.jsx';
+import Section6 from './component/section6.jsx';
+import Section7 from './component/section7.jsx';
+import Section8 from './component/section8.jsx';
+import Section9 from './component/section9.jsx';
+import Section10 from './component/section10.jsx';
 
 const App = () => {
   return (
-    <div>
-      <h1>Salom</h1>
+    <div  className='bg-[#FAF6F2]'>
+      <div>
+      <Section1 />
+      <Section2 />
+      <Section3 />
+      <Section4 />
+      <Section5 />
+      <Section6 />
+      <Section7 />
+      <Section8 />
+      <Section9 />
+      <Section10 />
+      </div>
     </div>
   )
 }
 
 export default App
+
