@@ -1,9 +1,10 @@
 import React from 'react'
+import Hookcnt from './components/hookcnt'
 
 const App = () => {
   return (
     <div>
-      <h1>Salom</h1>
+      <Hookcnt />
     </div>
   )
 }
