@@ -13,6 +13,16 @@ const App = () => {
       job: "Frontend development",
       age: 17,
     },
+    {
+      id: "2",
+      name: "Pari",
+      img: avatar,
+      email: "pari@gmail.com",
+      phone: "918-26-08-17",
+      status: true,
+      job: "Backend development",
+      age: 17,
+    },
   ]);
   let hundelAdd=(event)=>{
     event.preventDefault()
