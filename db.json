@@ -1,0 +1,44 @@
+{
+  "user": [
+    {
+      "0": true,
+      "1": false,
+      "2": false,
+      "3": false,
+      "img": "https://i.pravatar.cc/60",
+      "name": "Vahid",
+      "email": "vahid@gmail.com",
+      "age": "40",
+      "job": "Full Stack",
+      "id": "1",
+      "status": false
+    },
+    {
+      "img": "https://i.pravatar.cc/60",
+      "name": "Sana",
+      "email": "sana@gmail.com",
+      "age": "30",
+      "job": "Disagn",
+      "id": "2",
+      "status": true
+    },
+    {
+      "id": "3",
+      "name": "Liya",
+      "img": "https://i.pravatar.cc/60",
+      "email": "liya@gmail.com",
+      "age": "15",
+      "job": "C++",
+      "status": false
+    },
+    {
+      "id": "f12c",
+      "img": "https://i.pravatar.cc/40?img=5",
+      "name": "Sabrina",
+      "email": "sabrina@gmail.com",
+      "age": "17",
+      "job": "Frontend",
+      "status": true
+    }
+  ]
+}
