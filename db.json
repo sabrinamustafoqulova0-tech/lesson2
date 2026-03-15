@@ -1,0 +1,51 @@
+{
+  "data": [
+    {
+      "name": "Sabrina",
+      "age": "12",
+      "id": "1",
+      "status": true
+    },
+    {
+      "name": "Shukrona",
+      "age": "20",
+      "id": "3",
+      "status": true
+    },
+    {
+      "name": "Zamira",
+      "age": "31",
+      "id": "4"
+    },
+    {
+      "id": "8aba",
+      "name": "Sabrina",
+      "age": "10",
+      "status": true
+    },
+    {
+      "id": "0107",
+      "name": "Samir",
+      "age": "18",
+      "status": false
+    },
+    {
+      "id": "3639",
+      "name": "Sitora",
+      "age": "21",
+      "status": true
+    },
+    {
+      "id": "899e",
+      "name": "Dilnoza",
+      "age": "32",
+      "status": false
+    },
+    {
+      "id": "3083",
+      "name": "Wahid",
+      "age": "43",
+      "status": false
+    }
+  ]
+}
