@@ -176,7 +176,7 @@ const App = () => {
     </form>
 
     
-    <form onSubmit={hundelEddit} className='flex flex-col p-[20px] rounded-2xl bg-cyan-900 w-[300px] gap-3 '>
+    <form onSubmit={hundelEddit} className='flex flex-col p-[20px] rounded-2xl bg-cyan-900 w-[300px] gap-3'>
       <input value={inpImgEdit} onChange={(e)=>setInpImgEdit(e.target.value)} className='border p-[10px]  bg-gray-200 rounded-[5px]' type="text" placeholder='Img...' />
       <input value={inpNameEdit} onChange={(e)=>setInpNameEdit(e.target.value)} className='border p-[10px]  bg-gray-200 rounded-[5px]' type="text" placeholder='Name...' />
       <input value={inpEmailEdit} onChange={(e)=>setInpEmailEdit(e.target.value)} className='border p-[10px]  bg-gray-200 rounded-[5px]' type="text" placeholder='Email...' />
@@ -187,7 +187,7 @@ const App = () => {
     </div>
 
 
-    <table className='w-[80%] m-auto mt-[10px] border-collapse '>
+    <table className='w-[80%] m-auto mt-[10px] border-collapse  mb-[40px]'>
       <thead className='bg-cyan-900 text-white'>
         <tr>
           <th className='p-[10px] text-[18px] border-black border-1 border-solid text-start'>User</th>

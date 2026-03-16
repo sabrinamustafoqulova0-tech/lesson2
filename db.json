@@ -1,19 +1,6 @@
 {
   "user": [
     {
-      "0": true,
-      "1": false,
-      "2": false,
-      "3": false,
-      "img": "https://i.pravatar.cc/60",
-      "name": "Vahid",
-      "email": "vahid@gmail.com",
-      "age": "40",
-      "job": "Full Stack",
-      "id": "1",
-      "status": false
-    },
-    {
       "img": "https://i.pravatar.cc/60",
       "name": "Sana",
       "email": "sana@gmail.com",
@@ -27,7 +14,7 @@
       "name": "Liya",
       "img": "https://i.pravatar.cc/60",
       "email": "liya@gmail.com",
-      "age": "15",
+      "age": "14",
       "job": "C++",
       "status": false
     },
@@ -39,6 +26,31 @@
       "age": "17",
       "job": "Frontend",
       "status": true
+    },
+    {
+      "id": "c7a2",
+      "img": "https://i.pravatar.cc/40?img=5",
+      "name": "Madina",
+      "email": "madina@gmail.com",
+      "age": "16",
+      "job": "Frontend",
+      "status": true
+    },
+    {
+      "id": "a7a3",
+      "img": "https://i.pravatar.cc/40",
+      "name": "Fotima",
+      "email": "fotima@gmail.com",
+      "age": "14",
+      "job": "Backend"
+    },
+    {
+      "id": "1c52",
+      "img": "https://i.pravatar.cc/40?img=3",
+      "name": "Fotima",
+      "email": "fotima@gmail.com",
+      "age": "14",
+      "job": "Backend"
     }
   ]
 }
