@@ -1,0 +1,25 @@
+{
+    "user":[
+        {
+            "name":"Fotima",
+            "age":"14",
+            "status":false
+        },
+        {
+            "name":"Madina",
+            "age":"16",
+            "status":true
+        },
+        {
+            "name":"Zarina",
+            "age":"14",
+            "status":false
+        },
+        {
+            "name":"Sabrina",
+            "age":"16",
+            "status":true
+        }
+
+    ]
+}
