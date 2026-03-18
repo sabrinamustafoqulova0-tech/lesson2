@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "Madina",
+      "age": "10",
+      "status": true,
+      "img": "https://i.pravatar.cc/40",
+      "number": "+992 123 456 789"
+    },
+    {
+      "id": "2",
+      "name": "Fotima",
+      "age": "10",
+      "status": false,
+      "img": "https://i.pravatar.cc/40",
+      "number": "+992 103 056 780"
+    }
+  ]
+}
