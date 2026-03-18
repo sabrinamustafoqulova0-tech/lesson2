@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "Sabrina11",
+      "img": "https://i.pravatar.cc/40?img=3",
+      "job": "Frontebd",
+      "age": "17",
+      "status": true
+    },
+    {
+      "id": "2",
+      "name": "Madina",
+      "img": "https://i.pravatar.cc/40?img=3",
+      "job": "Frontebd",
+      "age": "10",
+      "status": false
+    },
+    {
+      "id": "3",
+      "name": "Zarina",
+      "img": "https://i.pravatar.cc/40?img=3",
+      "job": "Frontebd",
+      "age": "17",
+      "status": true
+    }
+  ]
+}
