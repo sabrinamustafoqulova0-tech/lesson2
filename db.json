@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "img": "https://i.pravatar.cc/40?img=3",
+      "name": "Sabrina",
+      "age": 16,
+      "status": false
+    },
+    {
+      "img": "https://i.pravatar.cc/40?img=3",
+      "name": "Zarinajon",
+      "age": "19",
+      "id": "2",
+      "status": true
+    },
+    {
+      "id": "3",
+      "img": "https://i.pravatar.cc/40?img=3",
+      "name": "Madina",
+      "age": 18,
+      "status": false
+    },
+    {
+      "id": "d9ab",
+      "img": "",
+      "name": "Zuhro",
+      "age": "12",
+      "status": true
+    }
+  ]
+}
