@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Space, Table, Button, Modal, Select, Input } from 'antd';
-import { DeleteOutlined, EditOutlined} from '@ant-design/icons';
+import { DeleteOutlined, EditOutlined, InfoCircleOutlined} from '@ant-design/icons';
 import { Checkbox } from 'antd';
 
 let Api="http://localhost:3001/data"
@@ -12,6 +12,7 @@ const App = () =>{
 
     
   const [open, setOpen] = useState(false);
+  const [openInfo, setOpenInfo] = useState(false);
   const [openEdit, setOpenEdit] = useState(false);
 
 
@@ -24,6 +25,9 @@ const App = () =>{
     let [inpImgEdit, setImgEdit]=useState("")
     let [inpAgeEdit, setAgeEdit]=useState("")
     let [idx, setIdx]=useState("")
+
+
+    let [idxInfo, setIdxInfo]=useState("")
 
   async function DeleteUser(id) {
     try {
@@ -158,6 +162,10 @@ const columns = [
       <EditOutlined />
     </Button>
 
+    <Button onClick={() => showModalInfo(record)}>
+      <InfoCircleOutlined />
+      </Button>
+
     <Checkbox checked={record.status} onChange={() => CheckedStatus(record.id)} />
   </Space>
 ),
@@ -166,9 +174,12 @@ const columns = [
   const showModal = () => {
     setOpen(true);
   };
+  const showModalInfo = (user) => {
+  setIdxInfo(user)
+  setOpenInfo(true)
+};
   let handleOk = () => {
     setTimeout(() => {
-      setOpen(false);
       let newUser={
         img: inpImg,
         name: inpName,
@@ -177,9 +188,17 @@ const columns = [
       AddUser(newUser)
     }, 1000);
   };
+
+  let handleOkInfo=()=>{
+      setOpenInfo(false)
+  }
   const handleCancel = () => {
     setOpen(false);
   };
+
+  const handleCancelInfo =()=>{
+    setOpenInfo(false)
+  }
   
 
 
@@ -263,6 +282,26 @@ const columns = [
           <input value={inpAgeEdit} onChange={(e)=>setAgeEdit(e.target.value)} className='border rounded-[10px] p-[10px]' type="text" placeholder='Age...' />
         </form>
       </Modal>
+
+
+      
+      <Modal
+  title="Info"
+  open={openInfo}
+  onOk={handleOkInfo}
+  onCancel={handleCancelInfo}
+>
+  {idxInfo && (
+    <div className="flex flex-col  items-center">
+      <img src={idxInfo.img} width={300} />
+      <p>{idxInfo.name}</p>
+      <p>{idxInfo.age}</p>
+        <span style={{color: idxInfo.status ? "green" : "red"}}>
+          {idxInfo.status ? "Active" : "Inactive"}
+        </span>
+    </div>
+  )}
+</Modal>
       </div>
 
 
