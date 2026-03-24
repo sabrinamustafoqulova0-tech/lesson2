@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+
+.bground{
+  background-image: url('/src/images/bgimg.png');
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 87%;
+}
+
+
+.backgroundimg{
+  background-image: url('/src/images/image\ 6.png');
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  background-color: black;
+}
+
