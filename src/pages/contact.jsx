@@ -11,16 +11,16 @@ import { Button } from '@mui/material'
 const Contact = () => {
   return (
     <div className='bg-black text-white pb-[100px]'>
-      <div className='bg-[#141414] rounded-2xl px-[50px] flex items-center gap-[200px]  mx-[100px]'>
+      <div className='bg-[#141414] rounded-2xl md:px-[50px] px-[10px] flex md:flex-row flex-col items-center md:gap-[200px]  md:mx-[100px] mx-[20px]'>
         <div>
           <p className='text-4xl font-bold'>Contact Us</p>
-          <p className='text-[#ffffff92] my-[40px] w-[600px]'>Get in touch with our team to discuss how we can help transform your business. We’re here to help.</p>
+          <p className='text-[#ffffff92] my-[40px] md:w-[600px]'>Get in touch with our team to discuss how we can help transform your business. We’re here to help.</p>
           <Button variant='contained'>Get In Touch Now</Button>
         </div>
       <img src={calogo} alt="" />
       </div>
-      <div className='flex justify-between px-[100px] gap-10 pt-[20px] mt-[50px]'>
-        <div className='bg-[#1A1A1A] p-[20px] rounded-2xl w-[840px] '>
+      <div className='flex justify-between md:px-[100px] px-[20px] md:flex-row flex-col gap-10 pt-[20px] mt-[50px]'>
+        <div className='bg-[#1A1A1A] p-[20px] rounded-2xl md:w-[840px] '>
         <p className='font-bold text-[20px]'>Send Us a Message</p>
         <div className='flex flex-col gap-5'>
           <div className='flex gap-3'>
@@ -42,7 +42,7 @@ const Contact = () => {
             <Button variant='contained'>Send</Button>
         </div>
       </div>
-        <div className='w-[560px]'>
+        <div className='md:w-[560px]'>
           <div className='bg-[#1A1A1A] p-[20px] rounded-2xl w-[100%]'>
             <p className='font-bold text-[20px]'>Contact Information</p>
             <div className='flex items-start gap-[10px] mt-[20px]'>

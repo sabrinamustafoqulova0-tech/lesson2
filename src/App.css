@@ -14,8 +14,17 @@
   background-image: url('/src/images/image\ 6.png');
   background-position: center;
   background-size: cover;
-  height: 400px;
-  width: 100%;
+    width: 100%;
   background-color: black;
+}
+.button{
+  display: block;
+  
+}
+
+@media (max-width:600px){
+.button{
+  display: none;
+}
 }
 

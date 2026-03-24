@@ -12,17 +12,17 @@ import boxservis6 from "../images/72355892508 1 (9).png"
 
 const Servic = () => {
   return (
-    <div className='bg-black text-white px-[100px]'>
-      <div className='bg-[#141414] rounded-2xl pl-[50px] flex items-center justify-between'>
+    <div className='bg-black text-white md:px-[100px] p-[10px]'>
+      <div className='bg-[#141414] rounded-2xl md:pl-[50px] p-[10px] flex items-center justify-between'>
         <div>
-          <p className='text-4xl mb-[40px] font-bold'>Our Comprehensive <span className='text-[#0A84FF]'>Digital Solutions</span></p>
-          <p className='text-[#ffffff92] w-[650px]'>At Catalyst Analytics, we offer a comprehensive suite of digital solutions designed to propel your business to new heights in the digital realm. With a team of skilled professionals, cutting-edge technologies, and a passion for innovation, we are committed to delivering exceptional results for every project we undertake. From captivating web design that leaves a lasting impression to seamless web development that ensures optimal functionality, we cover every aspect of your online presence.</p>
+          <p className='md:text-4xl md:mb-[40px] my-[10px] font-bold'>Our Comprehensive <span className='text-[#0A84FF]'>Digital Solutions</span></p>
+          <p className='text-[#ffffff92] md:w-[650px]'>At Catalyst Analytics, we offer a comprehensive suite of digital solutions designed to propel your business to new heights in the digital realm. With a team of skilled professionals, cutting-edge technologies, and a passion for innovation, we are committed to delivering exceptional results for every project we undertake. From captivating web design that leaves a lasting impression to seamless web development that ensures optimal functionality, we cover every aspect of your online presence.</p>
         </div>
-        <img src={imgservis} alt="" />
+        <img className='hidden md:block' src={imgservis} alt="" />
       </div>
       <div className='text-center py-[100px]'>
         <h1 className='font-bold text-3xl '>Our Services</h1>
-        <p className='w-[750px] m-auto my-[20px]'>Comprehensive AI, blockchain, and analytics solutions powered by deep expertise in machine learning and data engineering</p>
+        <p className='md:w-[750px] m-auto my-[20px]'>Comprehensive AI, blockchain, and analytics solutions powered by deep expertise in machine learning and data engineering</p>
         <div className='flex justify-between flex-wrap gap-[40px]'>
           <div className='bg-[#141414] rounded-4xl p-[20px] px-[30px] w-[620px]'>
             <img className='m-auto' src={boxservis} alt="" />

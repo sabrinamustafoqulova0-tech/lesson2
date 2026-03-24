@@ -9,10 +9,10 @@ import { Button } from '@mui/material'
 const Career = () => {
   return (
     <div className='bg-black text-white pb-[100px]'>
-      <div className='bg-[#141414] rounded-2xl px-[50px] flex items-center gap-[200px]  mx-[100px]'>
+      <div className='bg-[#141414] rounded-2xl md:px-[50px] px-[20px] flex md:flex-row flex-col items-center md:gap-[200px]  md:mx-[100px] mx-[20px]'>
         <div>
-          <p className='text-4xl font-bold'>Build the Future with Us</p>
-          <p className='text-[#ffffff92] my-[40px] w-[600px]'>We’re a team of builders, thinkers, and explorers using AI, machine learning, and blockchain to solve meaningful problems.</p>
+          <p className='md:text-4xl text-2xl font-bold'>Build the Future with Us</p>
+          <p className='text-[#ffffff92] md:my-[40px] my-[10px] md:w-[600px]'>We’re a team of builders, thinkers, and explorers using AI, machine learning, and blockchain to solve meaningful problems.</p>
           <Button variant='contained'>Explore Open Positions</Button>
         </div>
       <img src={portfel} alt="" />
@@ -33,7 +33,7 @@ const Career = () => {
         <input className='p-[10px] rounded-3xl bg-[#191919] w-[280px]' type="search" placeholder='Search by keywords...' />
       </div>
       
-      <div className='px-[100px]'>
+      <div className='md:px-[100px] px-[20px]'>
         <p className='text-center text-3xl font-bold pb-[50px]'>Open Positions</p>
         <div className='flex justify-between flex-wrap gap-9'>
           <div className='bg-[#1A1A1A] rounded-[20px] p-[40px] w-[623px]'>
@@ -42,7 +42,7 @@ const Career = () => {
               <p className='text-2xl'>Web Designer</p>
             </div>
             <img className='my-[10px]' src={sub} alt="" />
-            <div className='flex gap-4'>
+            <div className='flex gap-4 flex-wrap'>
               <img src={sub2} alt="" />
               <img src={sub2} alt="" />
             </div>
@@ -56,7 +56,7 @@ const Career = () => {
               <p className='text-2xl'>Web Designer</p>
             </div>
             <img className='my-[10px]' src={sub} alt="" />
-            <div className='flex gap-4'>
+            <div className='flex gap-4 flex-wrap'>
               <img src={sub2} alt="" />
               <img src={sub2} alt="" />
             </div>
@@ -70,7 +70,7 @@ const Career = () => {
               <p className='text-2xl'>Web Designer</p>
             </div>
             <img className='my-[10px]' src={sub} alt="" />
-            <div className='flex gap-4'>
+            <div className='flex gap-4 flex-wrap'>
               <img src={sub2} alt="" />
               <img src={sub2} alt="" />
             </div>
@@ -84,7 +84,7 @@ const Career = () => {
               <p className='text-2xl'>Web Designer</p>
             </div>
             <img className='my-[10px]' src={sub} alt="" />
-            <div className='flex gap-4'>
+            <div className='flex gap-4 flex-wrap'>
               <img src={sub2} alt="" />
               <img src={sub2} alt="" />
             </div>

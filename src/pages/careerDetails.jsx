@@ -14,12 +14,14 @@ import iconcareer from '../images/Icon Container.png'
 const CareerDetails = () => {
   return (
     <div className='bg-black text-white pb-[50px]'>
-      <div className='backgroundimg pt-[90px]'>
-        <p className='font-bold text-7xl text-center text-white mb-[40px]'>Web Designer</p>
-        <Button sx={{marginLeft:"650px", paddingLeft:"60px", paddingRight:"60px"}} variant='contained'>Apply Now</Button>
+      <div className='backgroundimg md:pt-[90px] pt-[20px] md:h-[400px] h-[100px]'>
+        <p className='font-bold md:text-7xl text-2xl text-center text-white mb-[40px]'>Web Designer</p>
+        <div className='button'>
+        <Button sx={{marginLeft:"650px",  paddingLeft:"60px", paddingRight:"60px"}} variant='contained'>Apply Now</Button>
+        </div>
       </div>
-      <div className='px-[100px] py-[40px] flex justify-between items-start'>
-        <div className='bg-[#1A1A1A] p-[20px] w-[840px] rounded-[10px]'>
+      <div className='md:px-[100px] px-[20px] py-[40px] flex md:flex-row gap-4 flex-col justify-between items-start'>
+        <div className='bg-[#1A1A1A] p-[20px] md:w-[840px] rounded-[10px]'>
           <p className='text-2xl '>About this position</p>
           <br />
           <p className='text-[#B3B3B2]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -80,7 +82,7 @@ const CareerDetails = () => {
           <br />
           <p className='text-[#B3B3B2]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
-        <div className='bg-[#1A1A1A] p-[20px] rounded-2xl w-[430px]'>
+        <div className='bg-[#1A1A1A] p-[20px] rounded-2xl md:w-[430px]'>
           <h2 className='text-2xl'>Web Designer</h2>
           <img className='mt-[15px]' src={sub} alt="" />
           <img className='mt-[15px]' src={sub2} alt="" />
@@ -91,7 +93,7 @@ const CareerDetails = () => {
         </div>
       </div>
 
-      <div className='bg-[#1A1A1A] p-[20px] rounded-2xl w-[840px] ml-[100px]'>
+      <div className='bg-[#1A1A1A] p-[20px] rounded-2xl md:w-[840px] md:ml-[100px] m-[20px]'>
         <p className='font-bold text-[20px]'>Apply Now</p>
         <div className='flex flex-col gap-5'>
           <div className='flex gap-3'>
@@ -114,7 +116,7 @@ const CareerDetails = () => {
         </div>
       </div>
             
-    <div className='px-[100px]'>
+    <div className='md:px-[100px] p-[20px]'>
       <p className=' text-3xl font-bold py-[50px]'>Similar Positions</p>
       <div className='flex justify-between flex-wrap gap-9'>
         <div className='bg-[#1A1A1A] rounded-[20px] p-[40px] w-[623px]'>
@@ -123,7 +125,7 @@ const CareerDetails = () => {
             <p className='text-2xl'>Web Designer</p>
           </div>
           <img className='my-[10px]' src={sub} alt="" />
-          <div className='flex gap-4'>
+          <div className='flex gap-4 flex-wrap'>
             <img src={sub2} alt="" />
             <img src={sub2} alt="" />
           </div>
@@ -137,7 +139,7 @@ const CareerDetails = () => {
             <p className='text-2xl'>Web Designer</p>
           </div>
           <img className='my-[10px]' src={sub} alt="" />
-          <div className='flex gap-4'>
+          <div className='flex gap-4 flex-wrap'>
             <img src={sub2} alt="" />
             <img src={sub2} alt="" />
           </div>
@@ -151,7 +153,7 @@ const CareerDetails = () => {
             <p className='text-2xl'>Web Designer</p>
           </div>
           <img className='my-[10px]' src={sub} alt="" />
-          <div className='flex gap-4'>
+          <div className='flex gap-4 flex-wrap'>
             <img src={sub2} alt="" />
             <img src={sub2} alt="" />
           </div>
@@ -165,7 +167,7 @@ const CareerDetails = () => {
             <p className='text-2xl'>Web Designer</p>
           </div>
           <img className='my-[10px]' src={sub} alt="" />
-          <div className='flex gap-4'>
+          <div className='flex gap-4 flex-wrap'>
             <img src={sub2} alt="" />
             <img src={sub2} alt="" />
           </div>

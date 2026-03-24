@@ -9,11 +9,11 @@ import locazia from "../images/Icon (5).png"
 const Layout = () => {
   return (
     <>
-     <nav className='flex items-center px-[100px] justify-between py-[20px] bg-black text-white'>
+     <nav className='flex items-center p-[10px] gap-4 md:px-[100px] justify-between py-[20px] bg-black text-white'>
 
-        <img src={logo}  alt="" />
+        <img className='hidden md:block' src={logo}  alt="" />
 
-        <div className='flex gap-[60px]'>
+        <div className='flex items-center md:gap-[60px] gap-[3px] md:text-[18px] text-[12px]'>
         <Link to={"/"}>Home</Link>
         <Link to={"/servic"}>Services</Link>
         <Link to={"/career"}>Careers</Link>
@@ -21,18 +21,18 @@ const Layout = () => {
         <Link to={"/contact"}>Contact</Link>
         </div>
 
-        <Button variant="contained">Contact Us</Button>
+        <Button sx={{fontSize:"8px"}} variant="contained">Contact Us</Button>
 
     </nav> 
     <div>
         <Outlet/>
     </div>
-    <div className='border-t-4 border-t-[#858585] px-[100px] py-[20px] bg-black text-white'>
-     <div className='flex items-center justify-between '>
+    <div className='border-t-4 border-t-[#858585] md:px-[100px] md:py-[20px] p-[10px] bg-black text-white'>
+     <div className='flex items-center justify-between md:gap-[60px] gap-[3px] text-[12px]'>
 
-        <img src={logo}  alt="" />
+        <img className='hidden md:block' src={logo}  alt="" />
 
-        <div className='flex gap-[60px]'>
+        <div className='flex md:gap-[60px] md:text-[18px] gap-[5px]'>
         <p>Home</p>
         <p>Services</p>
         <p>Careers</p>
@@ -40,19 +40,19 @@ const Layout = () => {
         <p>Contact</p>
         </div>
 
-        <img src={adres} alt="" />
+        <img className='md:w-[300px] w-[80px]' src={adres} alt="" />
     </div> 
-    <div className='flex justify-between my-[40px]'>
-        <div className='flex gap-6'>
+    <div className='flex justify-between md:flex-row flex-col my-[40px]'>
+        <div className='flex md:flex-row flex-col items-center gap-6'>
             <div className='flex gap-2'>
             <img src={pismo} alt="" />
             <p>contact@catalystanalytics.io</p>
         </div>
-        <div className='flex gap-2'>
+        <div className='flex items-center gap-2'>
             <img src={telefon} alt="" />
             <p>+1 (469) 712-4672</p>
         </div>
-        <div className='flex gap-2'>
+        <div className='flex items-center gap-2'>
             <img src={locazia} alt="" />
             <p>5511 Parkcrest Dr, Suite 103, Austin, TX 78731</p>
         </div>
