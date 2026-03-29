@@ -91,6 +91,7 @@ const TablePages = () => {
   async function Edit(edited) {
     try {
       await axios.put(Api,edited)
+      GetUser()
     } catch (error) {
       console.error(error.response.data.error);
     }

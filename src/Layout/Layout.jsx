@@ -4,6 +4,7 @@ import logo from "../image/manifold_logotype.svg"
 import logo2 from "../image/Frame 32 (2).png"
 import endelogo from "../image/Frame 30.png"
 import { Button } from '@mui/material'
+import i18n from '../i18n'
 
 const Layout = () => {
   
@@ -13,6 +14,9 @@ const Layout = () => {
     }
   return (
     <>
+    <div>
+      
+    </div>
     <div className='border-b-2 border-b-gray-200 md:px-[50px] flex justify-between items-center p-[20px]'>
     <nav className='flex gap-20 items-center '>
       <img className='w-[80px] md:w-[180px]' src={logo} alt="" />
@@ -20,7 +24,17 @@ const Layout = () => {
       <Link className='hidden md:block'>Portfolio</Link>
       <Link className='hidden md:block'>Email Marketing Audit</Link>
       <Link className='hidden md:block' to={"/table"}>Table</Link>
-    </nav>
+    </nav><div className='flex m-[10px]'>
+  <select
+    className='border p-[10px]'
+    onChange={(e) => i18n.changeLanguage(e.target.value)}
+    value={i18n.language}
+  >
+    <option value="ru">RU</option>
+    <option value="en">EN</option>
+    <option value="tj">TJ</option>
+  </select>
+</div>
     <img className='md:hidden block' src={logo2} alt="" />
     <Button onClick={()=>focus()} sx={{bgcolor:"red"}} variant='contained'>CONTACT US</Button>
     </div>
