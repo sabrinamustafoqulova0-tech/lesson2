@@ -22,6 +22,7 @@ const Cards = () => {
   };
   const Api = "http://37.27.29.18:8001/api/to-dos";
   const ApiImage = "http://37.27.29.18:8001/images";
+  const ApiCheked = "http://37.27.29.18:8001/completed";
 
   const [data, setData] = useState([]);
   const [name, setName] = useState("");
@@ -110,17 +111,12 @@ const Cards = () => {
 
   let CheckedStatys=useCallback(async(idx)=>{
     try {
-      let peshina=data.find((e)=>e.id==idx)
-      let editedStatus={
-        ...peshina,
-        isCompleted:!peshina.isCompleted
-      }
-      await axios.put(`${Api}?id=${idx}`,editedStatus)
+      await axios.put(`${ApiCheked}?id=${idx}`)
       GetUser()
     } catch (error) {
       console.error(error?.response.data.error); 
     }
-  },[]
+  },[idx]
 )
   useEffect(() => {
     GetUser();
